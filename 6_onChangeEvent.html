@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnChangeEvent</title>
+</head>
+<body>
+    <h2 align="center">On Change Events in JavaScript</h2>
+
+    <select id="mySelect" onchange="myFunction()">
+        <option value="C Programming">C</option>
+        <option value="C++ Programming">C++</option>
+        <option value="Java Programming">Java</option>
+        <option value="JavaScript Progarmming">JavaScript</option>
+        <option value="React JS">React JS</option>
+    </select>
+    
+    <p id="selectedValue"></p>
+    <script>
+        function myFunction()
+        {
+            var val=document.getElementById("mySelect").value;
+            document.getElementById("selectedValue").innerHTML="You Selected "+val;
+
+        }
+    </script>
+
+
+
+</body>
+</html>
