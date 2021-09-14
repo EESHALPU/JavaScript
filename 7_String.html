@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <h2>String in JavaScript</h2>
+
+    <script>
+        var str1="My Name is John";
+        var str2=str1.replace("John", "Eesha");
+        console.log(str2);
+
+        var msg="              Hello welcome           ";
+        document.write(msg.trim())
+
+        var name="Apple Banala Kiwi Papaya";
+        fruit=name.split(" ");
+        document.write("<br>"+fruit);
+        document.write("<br>"+"----------------------------------------")
+
+
+        const fruits=["Banana","Orange","Apple","Mango"];
+
+       // fruits.forEach(value=>document.write("<br>"+value));
+
+    //    fruits.forEach(value=>{
+    //        return(
+    //            document.write("</br>"+value)
+    //        )
+    //    })
+
+
+        fruits.forEach(myFunction);
+        
+
+        function myFunction(value)
+        {
+            document.write(value);
+        }
+       
+        let x=135e5;
+        let y=120e10;
+        let p=152e-4;
+
+        
+
+        document.write("<br>"+x);
+
+        document.write("<br>"+y);
+
+
+        document.write("<br>"+p);
+
+    </script>
+    
+
+    
+</body>
+</html>
