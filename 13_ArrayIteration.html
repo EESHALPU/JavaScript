@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Iteration</title>
+</head>
+<body>
+    <h1 align="center">Array Iteration</h1>
+
+
+
+    -------------------->using ForEach<--------------------------
+
+    <p id="demo"></p>
+    <script>
+        const numbers=[45, 4, 9, 16, 25];
+
+        let txt="";
+
+        numbers.forEach(myFunction);
+        document.getElementById("demo").innerHTML=txt;
+
+        function myFunction(value)
+        {
+            txt+=value+"<br>";
+
+        }
+    </script>
+
+    -------------------------------->Using Map<--------------------------
+    <script>
+        const numbers1=[45, 4, 9, 16, 25];
+
+        const numbers2=numbers1.map(myFun);
+
+        document.write("<br>Array Iterate by Map is:"+numbers2);
+
+        function myFun(value,index,Array)
+        {
+            return value;
+        }
+
+     </script>
+    
+</body>
+</html>

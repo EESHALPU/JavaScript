@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort</title>
+</head>
+<body>
+    <h3 align="center">Sorting of Number in javascript</h3>
+
+    <p style="font-weight: bold;color: blue;" id="demo"></p>
+    <p style="font-weight: 800;color: rgb(134, 0, 134);" id="demo1"></p>
+    <script>
+        const num=[123,40,35,10,345,654];
+        
+        document.getElementById("demo").innerHTML=num;
+
+        function myfun()
+        {
+            num.sort(function(a,b){return a-b});
+            document.getElementById("demo1").innerHTML=num;
+        }
+    
+    </script>
+    <button type="button" onclick='myfun()'>Check It</button>
+</body>
+</html>

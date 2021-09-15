@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Max</title>
+</head>
+<body>
+    <h1 align="Center">Max and Min</h1>
+
+    <p id="demo"></p>
+    
+    <script>
+        const number=[12,4,5,39,87,22];
+        number.push(125);
+
+        document.write("Array Elements are: "+number+"<br>")
+        document.getElementById("demo").innerHTML=myArrayMax(number);
+
+        function myArrayMax(arr)
+        {
+            return Math.max.apply(null,arr);
+        }
+       
+    </script>
+
+
+</body>
+</html>

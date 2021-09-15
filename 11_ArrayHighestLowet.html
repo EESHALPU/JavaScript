@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highest Lowest element</title>
+</head>
+<body>
+    <h2 align="center">Find the Highest and lowest element in Array</h2>
+
+    <p id="demo"></p>
+    <script>
+        const arr=[32,123,47,36,6,321,231];
+
+        arr.sort(function(a,b){return b-a});
+        document.getElementById("demo").innerHTML=arr;
+
+        document.write("<br>Max Element in Array: "+arr[0]);
+
+        document.write("<br>Min Element in Array :"+arr[arr.length-1]);
+        
+    </script>
+    
+</body>
+</html>

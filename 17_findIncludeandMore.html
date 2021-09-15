@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var name=["John","Rakesh","David","Raman","Deepak","Rakesh"];
+
+        document.write(name.indexOf("Rakesh"));
+
+        document.write(name.includes("David"));
+
+        const n=[12,2,19,18];
+        let index=n.findIndex(myFunction);
+
+        document.write(index);
+
+        function myFunction(value,index,array)
+        {
+            return value>18;
+        }
+
+        //Array.form()
+
+        const myArr=Array.from("ABCDESFJGJ");
+        document.getElementById("demo").innerHTML=myArr;
+
+
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        const keys=fruits.keys();
+
+        let text="";
+        document.write("<br>")
+
+        for(let x of keys)
+        {
+            document.write(x+" ");
+        }
+
+
+
+        
+
+    </script>
+</body>
+</html>

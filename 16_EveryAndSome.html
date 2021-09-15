@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        const numbers = [45, 14, 9, 16, 25];
+
+        const over18=numbers.every(myFunction);
+        document.write(over18+"<br>");
+
+
+        const over=numbers.some(myFunction);
+        document.write(over);
+
+        function myFunction(value,index,array)
+        {
+            return value>18;
+        }
+
+
+    </script>
+
+    
+</body>
+</html>
